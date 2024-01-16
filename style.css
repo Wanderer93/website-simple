@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500,700,900");
+
+/* reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    color: #262926;
+    background-color: #FEFEFE;
+    font-weight: 500; 
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 16pt;
+}
+
+.role {
+    font-size: 1.70rem;
+    text-decoration: none;
+    letter-spacing: 0.12px;
+    display: inline-block;
+    margin-bottom:0.22rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.4rem;
+    line-height: 142%;
+}
+
+h2 {
+    font-size: 3rem; 
+    font-weight: 900;
+    line-height: 112%;
+    margin: 0;
+    margin-bottom: 6rem;
+}
+
+a {
+    color: #262926;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.12px;
+    padding: 0.2rem;
+    transition: color 0.8s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #428437;
+}
+  
+a:active {
+    color: #205E15;
+}
+
+a:visited {
+    color: #262926;
+}
+
+a img {
+    width: 1.5rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+    opacity: 92%;
+}
+
+.lwr {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+.outer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 1rem;
+}
+
+.ml {
+    margin-left: 1.4rem;
+}
