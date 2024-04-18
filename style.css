@@ -60,17 +60,19 @@ body {
 }
 
 .role {
-    font-size: 1.70rem;
+    font-size: 1.9rem;
     text-decoration: none;
     letter-spacing: 0.12px;
     display: inline-block;
     margin-bottom:0.22rem;
+    line-height: 142%;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     margin-bottom: 1.4rem;
     line-height: 142%;
+    font-weight: 900;
 }
 
 h2 {
@@ -79,6 +81,11 @@ h2 {
     line-height: 112%;
     margin: 0;
     margin-bottom: 6rem;
+    background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 a {
@@ -93,27 +100,45 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #428437;
+    background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.icon-arr {
+    fill: #535B53;
+}
+
+a:hover .icon-arr svg path {
+    fill: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
+    /* fill: transparent; */
 }
   
 a:active {
-    color: #205E15;
+    color: #282691;
 }
 
-a:visited {
-    color: #262926;
+.icon-arr:active {
+    fill: #282691;
 }
 
-a img {
-    width: 1.5rem;
+/* a:visited {
+    color: #8887c9;
+} */
+
+a .icon-arr {
+    height: 1.2rem;
+    width: 1.2rem;
     vertical-align: middle;
-    margin-right: 0.25rem;
-    opacity: 92%;
+    margin-right: 0.20rem;
+    opacity: 100%;
 }
 
 .lwr {
-    text-transform: lowercase;
-    font-variant: small-caps;
+    text-transform: uppercase;
+    /* font-variant: small-caps; */
 }
 
 .outer-wrapper {
