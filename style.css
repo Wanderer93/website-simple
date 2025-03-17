@@ -249,8 +249,8 @@ body {
 
 /*review*/
 .hero-inner {
-    
-    margin:auto auto;
+    min-height: 100%;
+    margin: 12px auto;
 }
 
 .hero-subtitle {
@@ -453,7 +453,7 @@ body {
     }
     
     .hero {
-        margin-top: 100px;
+        margin-top: 64px;
     }
     
     .hero-title {
