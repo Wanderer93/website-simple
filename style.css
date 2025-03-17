@@ -197,7 +197,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 48px;
+    padding: 0 1.2rem;
     height: 60px;
     border-radius: 10px;
 }
@@ -344,14 +344,15 @@ body {
 
 .cta-button:hover svg path, .cta-button:hover span {
             color: #2c312c;
-            opacity: 1;
+            opacity: 1; 
 }
 
 .projects {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    gap: 96px;
-    margin-bottom: 80px;
+    gap: 48px;
+    margin-bottom: 40px;
+    padding: 1.2rem;
 }
 
 .project-card {
@@ -406,7 +407,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin: 80px 0;
+    margin: 32px 0;
 }
 
 .footer-button {
@@ -443,9 +444,10 @@ body {
     .projects {
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      gap: 48px;
     }
   }
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -453,11 +455,15 @@ body {
     }
     
     .hero {
-        margin-top: 64px;
+        height: 100%;
     }
     
     .hero-title {
         font-size: 36px;
+    }
+    
+    .projects {
+        gap: 64px;
     }
     
     .project-image {
