@@ -337,12 +337,14 @@ body {
     );
 }
 
-.cta-button svg path, .cta-button span {
+.cta-button path, .cta-button span {
+            fill: #FFFFFF;
             color: #ffffff;
             opacity: 1;
 }
 
-.cta-button:hover svg path, .cta-button:hover span {
+.cta-button:hover path, .cta-button:hover span {
+            fill: #2c312c;
             color: #2c312c;
             opacity: 1; 
 }
