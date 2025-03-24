@@ -478,6 +478,12 @@ body {
     }
 }
 
+@media (max-width: 630px) {
+    .projects {
+        padding: 0px;
+    }
+}
+
 @media (max-width: 480px) {
     .navbar {
         padding: 0 16px;
