@@ -5,13 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Damyana Design</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    
+    <div class="container-main">
+    <header class=" padding-lg">
       <a href="#main-content" class="sr-only">Skip to main content</a>
-      <div class="container">
           <nav class="navbar" aria-label="Main navigation">
               <div class="logo">Damyana</div>
               <div class="nav-links">
@@ -19,12 +20,10 @@
                   <!-- <a href="#" class="nav-link">About</a> -->
               </div>
           </nav>
-      </div>
     </header>
     
 
     <main>
-        <div class="container">
             <section class="hero" aria-labelledby="hero-heading">
               <div class="hero-inner">
                 <p class="hero-subtitle">Hey, I am Damy!</p>
@@ -56,40 +55,80 @@
             </section>
 
             <section id="work" class="projects">
-                <article class="project-card">
-                    <img src="./assets/damyana-monitoring-counterfeits.jpg" alt="Speeding up Moderators' work" class="project-image">
-                    <div>
-                        <p class="project-category">B2B Enterprise | Online Brand Protection</p>
-                        <h2 class="project-title">🔒 Speeding up Moderators' work</h2>
-                        <p class="project-description">I optimized a screen used by >500 moderators, QA, Admins, enforcers to identify and take down infringing products across multiple brands and channels. Key to business revenue.</p>
-                    </div>
+                <article class="project-card" >
+                    <a href="case-study-labelling.html">
+                        <div class="img-wrapper">
+                            <img src="./assets/damyana-monitoring-counterfeits.jpg" alt="Speeding up Moderators' work" class="project-image">
+                        </div>
+                        <div>
+                            <p class="project-category">B2B Enterprise | Online Brand Protection</p>
+                            <div class="flex">
+                                <h2 class="project-title">Speeding up analysts' work 
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.28468e-06 10C1.11025e-05 9.79599 0.0807133 9.60035 0.224356 9.4561C0.367999 9.31184 0.562817 9.2308 0.765958 9.23079H21.3848L13.5009 1.31332C13.4297 1.24191 13.3733 1.15711 13.3347 1.06377C13.2962 0.970431 13.2764 0.870381 13.2763 0.769336C13.2763 0.668292 13.2961 0.568234 13.3346 0.474879C13.3731 0.381523 13.4295 0.296698 13.5007 0.225253C13.5718 0.153808 13.6563 0.0971425 13.7493 0.0584926C13.8422 0.0198426 13.9419 -3.30547e-05 14.0425 7.42693e-08C14.1431 3.32032e-05 14.2427 0.019975 14.3357 0.0586862C14.4286 0.0973974 14.5131 0.154119 14.5842 0.225611L23.7756 9.45614C23.8468 9.52756 23.9032 9.61234 23.9417 9.70566C23.9802 9.79897 24 9.89899 24 10C24 10.101 23.9802 10.201 23.9417 10.2943C23.9032 10.3877 23.8468 10.4724 23.7756 10.5439L14.5842 19.7744C14.5131 19.8459 14.4286 19.9026 14.3357 19.9413C14.2427 19.98 14.1431 20 14.0425 20C13.9419 20 13.8422 19.9802 13.7493 19.9415C13.6563 19.9029 13.5718 19.8462 13.5007 19.7747C13.4295 19.7033 13.3731 19.6185 13.3346 19.5251C13.2961 19.4318 13.2763 19.3317 13.2763 19.2307C13.2764 19.1296 13.2962 19.0296 13.3347 18.9362C13.3733 18.8429 13.4297 18.7581 13.5009 18.6867L21.3848 10.7692H0.765958C0.562817 10.7692 0.367999 10.6882 0.224356 10.5439C0.0807133 10.3996 1.11025e-05 10.204 1.28468e-06 10Z" fill="black"/>
+                                    </svg> </h2>
+                            </div>
+                            <p class="project-description">I optimized a screen used by 500+ analysts to identify and take down infringing products across multiple brands and channels. Key to business revenue.</p>
+                        </div>
+                        </a>
                 </article>
 
                 <article class="project-card">
-                    <img src="./assets/damyana-image-matches.jpg" alt="Enhance discoverability by 1500% of Image Matches modal" class="project-image">
-                    <div>
-                        <p class="project-category">B2B Enterprise | Online Brand Protection</p>
-                        <h2 class="project-title">🔒 Enhance discoverability by 1500% of Image Matches modal</h2>
-                        <p class="project-description">While improving the experience of viewing images related to an infringing item, I enhanced the discoverability of the Image Matching modal by 1500%. </p>
-                    </div>
+                    <a href="case-study-matches.html">
+                            <div class="img-wrapper">
+                            <img src="./assets/damyana-image-matches.jpg" alt="Make image matching 1500% easier to find" class="project-image">
+                            </div>
+                            <div>
+                            <p class="project-category">B2B Enterprise | Online Brand Protection</p>
+                            <div class="flex">
+                                <h2 class="project-title">Make image matching 1500% easier to find 
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.28468e-06 10C1.11025e-05 9.79599 0.0807133 9.60035 0.224356 9.4561C0.367999 9.31184 0.562817 9.2308 0.765958 9.23079H21.3848L13.5009 1.31332C13.4297 1.24191 13.3733 1.15711 13.3347 1.06377C13.2962 0.970431 13.2764 0.870381 13.2763 0.769336C13.2763 0.668292 13.2961 0.568234 13.3346 0.474879C13.3731 0.381523 13.4295 0.296698 13.5007 0.225253C13.5718 0.153808 13.6563 0.0971425 13.7493 0.0584926C13.8422 0.0198426 13.9419 -3.30547e-05 14.0425 7.42693e-08C14.1431 3.32032e-05 14.2427 0.019975 14.3357 0.0586862C14.4286 0.0973974 14.5131 0.154119 14.5842 0.225611L23.7756 9.45614C23.8468 9.52756 23.9032 9.61234 23.9417 9.70566C23.9802 9.79897 24 9.89899 24 10C24 10.101 23.9802 10.201 23.9417 10.2943C23.9032 10.3877 23.8468 10.4724 23.7756 10.5439L14.5842 19.7744C14.5131 19.8459 14.4286 19.9026 14.3357 19.9413C14.2427 19.98 14.1431 20 14.0425 20C13.9419 20 13.8422 19.9802 13.7493 19.9415C13.6563 19.9029 13.5718 19.8462 13.5007 19.7747C13.4295 19.7033 13.3731 19.6185 13.3346 19.5251C13.2961 19.4318 13.2763 19.3317 13.2763 19.2307C13.2764 19.1296 13.2962 19.0296 13.3347 18.9362C13.3733 18.8429 13.4297 18.7581 13.5009 18.6867L21.3848 10.7692H0.765958C0.562817 10.7692 0.367999 10.6882 0.224356 10.5439C0.0807133 10.3996 1.11025e-05 10.204 1.28468e-06 10Z" fill="black"/>
+                                    </svg>
+                                </h2>
+                            </div>
+                            <p class="project-description">While improving the experience of viewing images related to an infringing item, I enhanced the discoverability of the Image Matching modal by 1500%. </p>
+                        </div>
+                        </a>
                 </article>
 
-                <article class="project-card">
-                    <img src="./assets/damyana-bidform.jpg" alt="Decrease time to fill out Bid form" class="project-image">
-                    <div>
-                        <p class="project-category">B2B Enterprise | Market Research</p>
-                        <h2 class="project-title">Decrease time to fill out Bid form</h2>
-                        <p class="project-description">I designed and tested a bid form to speed up and increase the precision of communication between sales and research participant sourcing departments in MetrixLab. Part of the experimental coded proof-of-concept was autofilling with AI.</p>
-                    </div>
+                <article class="project-card" >
+                    <a href="case-study-bidform.html">
+                        
+                            <div class="img-wrapper">
+                            <img src="./assets/damyana-bidform.jpg" alt="Decrease time to fill out Bid form" class="project-image">
+                            </div>
+                            <div>
+                            <p class="project-category">B2B Enterprise | Market Research</p>
+                            <div class="flex">
+                                <h2 class="project-title">Decrease time to fill out Bid form 
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.28468e-06 10C1.11025e-05 9.79599 0.0807133 9.60035 0.224356 9.4561C0.367999 9.31184 0.562817 9.2308 0.765958 9.23079H21.3848L13.5009 1.31332C13.4297 1.24191 13.3733 1.15711 13.3347 1.06377C13.2962 0.970431 13.2764 0.870381 13.2763 0.769336C13.2763 0.668292 13.2961 0.568234 13.3346 0.474879C13.3731 0.381523 13.4295 0.296698 13.5007 0.225253C13.5718 0.153808 13.6563 0.0971425 13.7493 0.0584926C13.8422 0.0198426 13.9419 -3.30547e-05 14.0425 7.42693e-08C14.1431 3.32032e-05 14.2427 0.019975 14.3357 0.0586862C14.4286 0.0973974 14.5131 0.154119 14.5842 0.225611L23.7756 9.45614C23.8468 9.52756 23.9032 9.61234 23.9417 9.70566C23.9802 9.79897 24 9.89899 24 10C24 10.101 23.9802 10.201 23.9417 10.2943C23.9032 10.3877 23.8468 10.4724 23.7756 10.5439L14.5842 19.7744C14.5131 19.8459 14.4286 19.9026 14.3357 19.9413C14.2427 19.98 14.1431 20 14.0425 20C13.9419 20 13.8422 19.9802 13.7493 19.9415C13.6563 19.9029 13.5718 19.8462 13.5007 19.7747C13.4295 19.7033 13.3731 19.6185 13.3346 19.5251C13.2961 19.4318 13.2763 19.3317 13.2763 19.2307C13.2764 19.1296 13.2962 19.0296 13.3347 18.9362C13.3733 18.8429 13.4297 18.7581 13.5009 18.6867L21.3848 10.7692H0.765958C0.562817 10.7692 0.367999 10.6882 0.224356 10.5439C0.0807133 10.3996 1.11025e-05 10.204 1.28468e-06 10Z" fill="black"/>
+                                    </svg>
+                                </h2>
+                            </div>
+                            <p class="project-description">I designed and tested a bid form to speed up and increase the precision of communication between sales and research participant sourcing departments in MetrixLab. Part of the experimental coded proof-of-concept was autofilling with AI.</p>
+                        </div>
+                    </a>
                 </article>
 
-                <article class="project-card">
-                    <img src="./assets/damyana-bilda-rainscreen.jpg" alt="Lower bounce rate by 30% for BILDA Rainscreen System" class="project-image">
-                    <div>
-                        <p class="project-category">B2B | Facade Construction</p>
-                        <h2 class="project-title">Lower bounce rate by 30% for BILDA Rainscreen System</h2>
-                        <p class="project-description">BILDA Rainscreen needed to build trust with customers and drive awareness, as well as conversions digitally. A redesign of the homepage decreased bounce rates by 30%.</p>
-                    </div>
+                <article class="project-card" href="case-study-bilda.html">
+                    <a href="case-study-bilda.html">
+                            <div class="img-wrapper">
+                            <img src="./assets/images-cs2/bilda-main.png" alt="Lower bounce rate by 30% for BILDA Rainscreen System" class="project-image">
+                            </div>
+                            <div>
+                            <p class="project-category">B2B | Facade Construction</p>
+                            <div class="flex">
+                                <h2 class="project-title">Lower bounce rate by 30% for BILDA Rainscreen System 
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.28468e-06 10C1.11025e-05 9.79599 0.0807133 9.60035 0.224356 9.4561C0.367999 9.31184 0.562817 9.2308 0.765958 9.23079H21.3848L13.5009 1.31332C13.4297 1.24191 13.3733 1.15711 13.3347 1.06377C13.2962 0.970431 13.2764 0.870381 13.2763 0.769336C13.2763 0.668292 13.2961 0.568234 13.3346 0.474879C13.3731 0.381523 13.4295 0.296698 13.5007 0.225253C13.5718 0.153808 13.6563 0.0971425 13.7493 0.0584926C13.8422 0.0198426 13.9419 -3.30547e-05 14.0425 7.42693e-08C14.1431 3.32032e-05 14.2427 0.019975 14.3357 0.0586862C14.4286 0.0973974 14.5131 0.154119 14.5842 0.225611L23.7756 9.45614C23.8468 9.52756 23.9032 9.61234 23.9417 9.70566C23.9802 9.79897 24 9.89899 24 10C24 10.101 23.9802 10.201 23.9417 10.2943C23.9032 10.3877 23.8468 10.4724 23.7756 10.5439L14.5842 19.7744C14.5131 19.8459 14.4286 19.9026 14.3357 19.9413C14.2427 19.98 14.1431 20 14.0425 20C13.9419 20 13.8422 19.9802 13.7493 19.9415C13.6563 19.9029 13.5718 19.8462 13.5007 19.7747C13.4295 19.7033 13.3731 19.6185 13.3346 19.5251C13.2961 19.4318 13.2763 19.3317 13.2763 19.2307C13.2764 19.1296 13.2962 19.0296 13.3347 18.9362C13.3733 18.8429 13.4297 18.7581 13.5009 18.6867L21.3848 10.7692H0.765958C0.562817 10.7692 0.367999 10.6882 0.224356 10.5439C0.0807133 10.3996 1.11025e-05 10.204 1.28468e-06 10Z" fill="black"/>
+                                    </svg>
+                                </h2>
+                            </div>
+                            <p class="project-description">BILDA Rainscreen needed to build trust with customers and drive awareness, as well as conversions digitally. A redesign of the homepage decreased bounce rates by 30%.</p>
+                        </div>
+                        </a>
                 </article>
             </section>
 
@@ -121,8 +160,9 @@
                 <a class="ml lwr footer-link" href="mailto:hello@damyana.design"><svg class="icon-arr" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#535B53" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>E-mail</a>
               </div> -->
             </div>
-        </div>
     </main>
+    </div>
+</body>
   
   <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
