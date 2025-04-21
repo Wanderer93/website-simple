@@ -772,6 +772,10 @@ body {
     .testimonial-text {
         font-size: 24px;
     }
+
+    .img-wrapper, .image-container {
+        height: 328px!important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -809,6 +813,14 @@ body {
     
     .testimonial-author {
         font-size: 16px;
+    }
+
+    .img-wrapper, .image-container {
+        height: 156px!important;
+    }
+
+    .cover-sm img {
+        object-fit: cover;
     }
 }
 
