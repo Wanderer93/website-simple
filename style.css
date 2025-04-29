@@ -98,9 +98,10 @@ a {
     transition: color 0.8s ease;
 }
 
-a span:hover {
+a span:hover, a:hover svg.icon-arr path, .nav-link:hover {
     text-decoration: none;
     background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
+    fill: url(#myGradient);
     background-clip: border-box;
     -webkit-background-clip: text;
     background-clip: text;
@@ -251,12 +252,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #6E9A71;
-    text-decoration-line: underline;
-    text-decoration: wavy;
-    text-underline-offset: 0.16px;
-}
+
 
 .hero {
     max-width: 550px;
@@ -322,10 +318,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.social-link:hover {
-    opacity: 0.8;
-}
-
 .cta-button {
     display: flex;
     align-items: center;
@@ -345,17 +337,7 @@ body {
     /* transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(92, 183, 175, 0.3); */
     filter: brightness(1.05);
-    background: radial-gradient(
-        circle at 83.19% 70%, 
-        #94be97 0%, 
-        #78bba1 14.29%, 
-        #5cb7af 28.57%, 
-        #44b2bd 42.86%, 
-        #3baaca 57.14%, 
-        #4ca0d1 71.43%, 
-        #6995d2 85.71%, 
-        #8887c9 100%
-    );
+    background: radial-gradient(201.45% 200.52% at 64.66% -56.87%, #94BE97 0%, #78BBA1 14.29%, #5CB7AF 28.57%, #44B2BD 42.86%, #3BAACA 57.14%, #4CA0D1 71.43%, #6C9CDD 85.71%, #9F9EDE 100%);  
 }
 
 .cta-button path, .cta-button span {
