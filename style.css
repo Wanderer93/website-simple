@@ -81,11 +81,11 @@ h2 {
     line-height: 130%;
     margin: 0;
     margin-bottom: 6rem;
-    background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
+    /* background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
     background-clip: border-box;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent; */
 }
 
 a {
@@ -94,18 +94,24 @@ a {
     font-size: 1rem;
     text-decoration: none;
     letter-spacing: 0.12px;
-    padding: 0.2rem;
+    padding: 0.3rem;
     transition: color 0.8s ease;
 }
 
-a span:hover, a:hover svg.icon-arr path, .nav-link:hover {
-    text-decoration: none;
+a span:hover, a:hover svg.icon-arr path, .nav-link:hover, .project-card:hover .project-title {
+    /* text-decoration: none;
     background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
     fill: url(#myGradient);
     background-clip: border-box;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent; */
+    background-image: linear-gradient(to right, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
+    background-repeat: no-repeat;
+    background-size: 100% 6px;
+    background-position: 0 100%;
+    /* padding-bottom: 3px; */
+    transition: background-image 0.5s ease-out;
 }
 /*fix*/
 
@@ -280,18 +286,6 @@ body {
 .hero-title {
     font-size: 48px;
     font-weight: 600;
-    background: radial-gradient(circle, 
-        rgba(148, 190, 151, 1) 0%, 
-        rgba(120, 187, 161, 1) 14.29%, 
-        rgba(92, 183, 175, 1) 28.57%, 
-        rgba(68, 178, 189, 1) 42.86%, 
-        rgba(59, 170, 202, 1) 57.14%, 
-        rgba(76, 160, 209, 1) 71.43%, 
-        rgba(105, 149, 210, 1) 85.71%, 
-        rgba(136, 135, 201, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
     margin-bottom: 24px;
     line-height: 1.1;
     letter-spacing: -0.4px;
@@ -318,6 +312,10 @@ body {
     transition: opacity 0.3s ease;
 }
 
+.social-link span {
+    padding: 0.3rem;
+}
+
 .cta-button {
     display: flex;
     align-items: center;
@@ -331,13 +329,18 @@ body {
     background-color: #2c312c;
 }
 
-.cta-button:hover {
+.cta-button:hover  {
     color: #2c312c !important;
     text-decoration: none;
     /* transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(92, 183, 175, 0.3); */
     filter: brightness(1.05);
     background: radial-gradient(201.45% 200.52% at 64.66% -56.87%, #94BE97 0%, #78BBA1 14.29%, #5CB7AF 28.57%, #44B2BD 42.86%, #3BAACA 57.14%, #4CA0D1 71.43%, #6C9CDD 85.71%, #9F9EDE 100%);  
+    
+}
+
+.cta-button:hover span {
+    background-image:none;
 }
 
 .cta-button path, .cta-button span {
@@ -417,18 +420,7 @@ body {
     color: var(--text-color);
     margin-bottom: 12px;
     letter-spacing: -0.4px;
-    background: radial-gradient(circle at 83% 70%, 
-        rgba(148, 190, 151, 1) 0%, 
-        rgba(120, 187, 161, 1) 14.29%, 
-        rgba(92, 183, 175, 1) 28.57%, 
-        rgba(68, 178, 189, 1) 42.86%, 
-        rgba(59, 170, 202, 1) 57.14%, 
-        rgba(76, 160, 209, 1) 71.43%, 
-        rgba(105, 149, 210, 1) 85.71%, 
-        rgba(136, 135, 201, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    padding-bottom: 8px;
 }
 
 .project-description {
