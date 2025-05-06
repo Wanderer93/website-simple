@@ -531,6 +531,11 @@ body {
     .hero-title {
         font-size: 28px;
     }
+
+    .project-card svg {
+        width: 1rem;
+        height: 1rem;
+    }
     
     .project-image {
         height: 200px;
