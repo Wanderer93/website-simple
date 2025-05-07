@@ -32,6 +32,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+::selection {
+    background-color: #94BE97;
+}
+
 body {
 	line-height: 1;
     font-size: 16px;
@@ -165,8 +170,8 @@ a .icon-arr {
 :root {
     --primary-color: #2C3131;
     --text-color: #2C3131;
-    --text-color-light: rgba(44, 49, 49, 0.7);
-    --border-color: #262D26;
+    --text-color-light: rgba(44, 49, 49, 0.84);
+    --border-color: #2C3131;
     --card-radius: 10px;
 }
 
@@ -191,7 +196,7 @@ a .icon-arr {
 header {
         position: sticky;
         top: 0;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.84);
         backdrop-filter: blur(10px);
         z-index: 100;
         padding: 0 0;
@@ -718,7 +723,7 @@ body {
 .section-text {
     font-size: 20px;
     font-weight: 400;
-    color: #000;
+    color: #2C312C;
 }
 
 .image-container {
