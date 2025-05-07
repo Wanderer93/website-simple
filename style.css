@@ -265,6 +265,10 @@ a {
     transition: opacity 0.3s ease;
 }
 
+.hero, .hero-subtitle, .project-title, .hero-title, .section-title {
+  text-wrap: balance;
+}
+
 .hero {
     max-width: 640px;
     padding: 14px 0;
@@ -273,13 +277,17 @@ a {
     flex-direction: column;
     align-items: center;
     margin:auto auto;
-    margin-bottom: 32px;
+    height: 80vh;
+    width: 100vw;
 }
 
 /*review*/
 .hero-inner {
     min-height: 100%;
     margin: 12px auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-subtitle {
@@ -402,6 +410,15 @@ a {
     transform: translateX(2px);
 }
 
+.project-card a:active, .project-card a:visited, .navbar a:visited {
+    background-color: transparent!important;
+}
+
+nav > a:first-child {
+    padding:0px!important;
+    background-color: transparent!important;
+}
+
 .project-image {
     width: 100%;
     min-height:360px;
@@ -486,7 +503,7 @@ a {
     }
     
     .hero {
-        height: 100%;
+        max-width: 480px;
     }
     
     .hero-title {
@@ -525,9 +542,35 @@ a {
     .nav-links {
         gap: 16px;
     }
+
+    header.padding-lg {
+        padding: 0px;
+    }
+
+    .cta-button {
+        width: 100%;
+        display: flex;   
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
     
     .hero-title {
         font-size: 28px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .social-links {
+        gap: 12px;
     }
 
     .project-card svg {
