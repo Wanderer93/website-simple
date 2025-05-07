@@ -34,6 +34,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-size: 16px;
+    font-weight: 500;
 }
 ol, ul {
 	list-style: none;
@@ -49,6 +51,15 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a:active {
+    color: #4C7B4F;
+}
+
+span.green {
+    padding: 0px 4px;
+    background-color: #94BE97;
 }
 
 body {
@@ -90,38 +101,21 @@ h2 {
 
 a {
     color: #262926;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1rem;
     text-decoration: none;
-    letter-spacing: 0.12px;
+    /* letter-spacing: 0.12px; */
     padding: 0.3rem;
     transition: color 0.8s ease;
 }
 
 a span:hover, a:hover svg.icon-arr path, .nav-link:hover {
-    /* text-decoration: none;
-    background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
-    fill: url(#myGradient);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
-    background-image: linear-gradient(to right, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
-    background-repeat: no-repeat;
-    background-size: 100% 6px;
-    background-position: 0 100%;
-    /* padding-bottom: 3px; */
-    transition: background-image 0.5s ease-out;
+
 }
 /*fix*/
 
 .icon-arr {
     fill: #535B53;
-}
-
-a:hover .icon-arr svg path {
-    fill: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
-    /* fill: transparent; */
 }
   
 a:active {
@@ -230,7 +224,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: 600;
-    background: radial-gradient(circle, 
+    /* background: radial-gradient(circle, 
         rgba(148, 190, 151, 1) 0%, 
         rgba(120, 187, 161, 1) 14.29%, 
         rgba(92, 183, 175, 1) 28.57%, 
@@ -241,8 +235,7 @@ body {
         rgba(136, 135, 201, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
-    letter-spacing: -0.4px;
+    color: transparent; */
 }
 
 .nav-links {
@@ -278,10 +271,10 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 16px;
-    font-weight: 500;
-    /* color: rgba(44, 49, 49, 0.8); */
-    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(44, 49, 49, 0.8);
+    margin-bottom: 8px;
 }
 
 .hero-title {
@@ -293,7 +286,7 @@ body {
 }
 
 .hero-description {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 24px;
 }
@@ -306,25 +299,28 @@ body {
 .social-link {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
     color: #2C312C;
     text-decoration: none;
-    font-size: 16px;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;align-self: center;
 }
 
-.social-link span {
-    padding: 0.3rem;
+.social-link span, .nav-link span {
+    padding: 0rem;
+}
+.social-link:hover, .nav-link:hover {
+    background-color: #94BE97;
 }
 
 .cta-button {
+    color:#ffffff;
     display: flex;
     align-items: center;
     padding: 12px 16px;
     border-radius: 10px;
     gap: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
     text-decoration: none;
     width: fit-content;
     background-color: #2c312c;
@@ -333,27 +329,8 @@ body {
 .cta-button:hover  {
     color: #2c312c !important;
     text-decoration: none;
-    /* transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(92, 183, 175, 0.3); */
-    filter: brightness(1.05);
-    background: radial-gradient(201.45% 200.52% at 64.66% -56.87%, #94BE97 0%, #78BBA1 14.29%, #5CB7AF 28.57%, #44B2BD 42.86%, #3BAACA 57.14%, #4CA0D1 71.43%, #6C9CDD 85.71%, #9F9EDE 100%);  
-    
-}
-
-.cta-button:hover span {
-    background-image:none;
-}
-
-.cta-button path, .cta-button span {
-            fill: #FFFFFF;
-            color: #ffffff;
-            opacity: 1;
-}
-
-.cta-button:hover path, .cta-button:hover span {
-            fill: #2c312c;
-            color: #2c312c;
-            opacity: 1; 
+    /* background: radial-gradient(201.45% 200.52% at 64.66% -56.87%, #94BE97 0%, #78BBA1 14.29%, #5CB7AF 28.57%, #44B2BD 42.86%, #3BAACA 57.14%, #4CA0D1 71.43%, #6C9CDD 85.71%, #9F9EDE 100%);   */
+    background-color: #94BE97;
 }
 
 .img-wrapper {
@@ -408,7 +385,7 @@ body {
 
 .project-category, .subtitle {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-color-light);
     margin-bottom: 4px;
     text-transform: uppercase;
@@ -425,7 +402,7 @@ body {
 
 .project-description {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .footer-links {
