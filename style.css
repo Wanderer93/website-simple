@@ -98,7 +98,7 @@ a {
     transition: color 0.8s ease;
 }
 
-a span:hover, a:hover svg.icon-arr path, .nav-link:hover, .project-card:hover .project-title {
+a span:hover, a:hover svg.icon-arr path, .nav-link:hover {
     /* text-decoration: none;
     background: radial-gradient(circle at 50% 50%, #94be97, #78bba1, #5cb7af, #44b2bd, #3baaca, #4ca0d1, #6995d2, #8887c9);
     fill: url(#myGradient);
@@ -383,7 +383,7 @@ body {
 .project-card {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
 }
 
 .project-card:hover img {
@@ -421,7 +421,6 @@ body {
     color: var(--text-color);
     margin-bottom: 12px;
     letter-spacing: -0.4px;
-    padding-bottom: 8px;
 }
 
 .project-description {
