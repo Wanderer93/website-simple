@@ -243,6 +243,10 @@ body {
     color: transparent; */
 }
 
+.logo:active, .logo:visited {
+    background-color: transparent;
+}
+
 .nav-links {
     display: flex;
     gap: 32px;
@@ -330,7 +334,6 @@ body {
 }
 
 .email:hover svg path {
-
     fill:#2C312C;
 }
 
