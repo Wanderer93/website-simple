@@ -115,7 +115,8 @@ a {
     text-decoration: none;
     /* letter-spacing: 0.12px; */
     padding: 0.3rem;
-    transition: color 0.8s ease;
+    /* transition: color 0.8s ease; */
+    transition: color 0.3s ease-out;
 }
 
 a span:hover, a:hover svg.icon-arr path, .nav-link:hover {
@@ -202,6 +203,10 @@ body {
     color: var(--text-color);
     line-height: 1.5;
 }
+
+a {
+    padding: 0.2rem 0.5rem;
+}
 .flex {
     display: flex;
     flex-direction:row;
@@ -260,8 +265,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-
-
 .hero {
     max-width: 640px;
     padding: 14px 0;
@@ -308,10 +311,11 @@ body {
 .social-link {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 4px;
     color: #2C312C;
     text-decoration: none;
-    transition: opacity 0.3s ease;align-self: center;
+    transition: opacity 0.3s ease;
+    align-self: center;
 }
 
 .social-link span, .nav-link span {
@@ -323,9 +327,9 @@ body {
 }
 
 .copied-feedback {
-    
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
-    transform: scale(1.07); 
+    /* transform: scale(1.07);  */
+    color: #383A3F;
 }
 
 .email:visited, .email:visited svg path {
