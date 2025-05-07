@@ -53,8 +53,17 @@ table {
 	border-spacing: 0;
 }
 
-a:active {
+a:active, button:active {
+    background-color: #4C7B4F;
+    color:rgba(44, 49, 44, 1)
+}
+
+.logo:hover, .logo:active {
     color: #4C7B4F;
+}
+
+a, span {
+    border-radius:2px;
 }
 
 span.green {
@@ -119,11 +128,7 @@ a span:hover, a:hover svg.icon-arr path, .nav-link:hover {
 }
   
 a:active {
-    color: #282691;
-}
-
-.icon-arr:active {
-    fill: #282691;
+    color: #4C7B4F;
 }
 
 /* a:visited {
@@ -310,6 +315,23 @@ body {
 }
 .social-link:hover, .nav-link:hover {
     background-color: #94BE97;
+    color:rgba(44, 49, 44, 1)!important;
+}
+
+.copied-feedback {
+    
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transform: scale(1.07); 
+}
+
+.email:visited, .email:visited svg path {
+    color:#4C7B4F;
+    fill:#4C7B4F;
+}
+
+.email:hover svg path {
+
+    fill:#2C312C;
 }
 
 .cta-button {

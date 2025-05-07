@@ -40,7 +40,7 @@
                       </svg> -->
                       <span>Get resume</span>
                   </a>
-                  <a href="#" onclick="copyToClipboard('This is the text to copy!'); return false;" class="social-link" aria-label="Send email">
+                  <a href="#" onclick="copyToClipboard('hello@damyana.design'); return false;" class="social-link email" aria-label="Send email">
                   <span>hello@damyana.design</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
                       
@@ -167,13 +167,28 @@
   </script> -->
   <script>
     function copyToClipboard(text) {
-      navigator.clipboard.writeText(text)
-        .then(() => {
-        })
-        .catch(err => {
-          console.error('Failed to copy text: ', err);
-        });
-    }
+  const emailLink = document.querySelector('.social-link.email');
+  const originalText = emailLink.querySelector('span').textContent;
+  const originalSvg = emailLink.querySelector('svg').outerHTML;
+  const tickSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg>';
+
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      emailLink.querySelector('span').textContent = 'Copied!';
+      emailLink.querySelector('svg').outerHTML = tickSvg;
+      emailLink.classList.add('copied-feedback');
+
+      setTimeout(() => {
+        emailLink.querySelector('span').textContent = originalText;
+        emailLink.querySelector('svg').outerHTML = originalSvg;
+        emailLink.classList.remove('copied-feedback');
+      }, 1500); // Revert after 1.5 seconds
+    })
+    .catch(err => {
+      console.error('Failed to copy text: ', err);
+      // Optionally provide error feedback (e.g., change text to "Error")
+    });
+}
     </script>
 
   </body>
