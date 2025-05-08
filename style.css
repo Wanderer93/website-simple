@@ -441,7 +441,8 @@ nav > a:first-child {
     margin-bottom: 4px;
     text-transform: uppercase;
     letter-spacing: 0.16px;
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    vertical-align: middle;
 }
 
 .project-title {
