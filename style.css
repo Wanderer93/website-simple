@@ -766,9 +766,10 @@ body {
 }
 
 .image-caption {
-    font-size: 20px;
+    font-size: 1rem;
+    font-weight:400;
     font-style: italic;
-    color: #2c312c;
+    color: rgba(44, 49, 49, 0.84);
     text-align: center;
     margin-bottom: 40px;
 }
