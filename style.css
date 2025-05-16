@@ -442,7 +442,7 @@ nav > a:first-child {
 .project-image {
     width: 100%;
     min-height:360px;
-    height: 446px;
+    max-height: 446px;
     border-radius: var(--card-radius);
     background-color: #333;
     object-fit: cover;
@@ -553,6 +553,11 @@ nav > a:first-child {
 }
 
 @media (max-width: 480px) {
+
+    .img-wrapper img {
+        object-fit:contain;
+        object-position:top;
+    }
     .navbar {
         padding: 0 16px;
     }
